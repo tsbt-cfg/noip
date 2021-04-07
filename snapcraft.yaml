@@ -1,4 +1,5 @@
 name: noip
+base: core18
 version: 2.1.9
 summary: No-IP Dynamic DNS Update Client for Linux
 description: |
@@ -18,9 +19,14 @@ apps:
     command: launcher
     plugs: [network]
 
-grade: stable
-confinement: strict
+grade: devel
+confinement: development
 
+architectures:
+  - build-on: armhf
+    run-on: armhf
+  - build-on: arm64
+    run-on: arm64
 parts:
   client:
 #    make-parameters: ["-C","noip-2.1.9-1"]
