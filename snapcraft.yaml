@@ -20,7 +20,7 @@ apps:
     plugs: [network]
 
 grade: devel
-confinement: development
+confinement: devmode
 
 architectures:
   - build-on: armhf
