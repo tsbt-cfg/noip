@@ -37,5 +37,4 @@ parts:
     source: http://www.noip.com/client/linux/noip-duc-linux.tar.gz
     plugin: dump
     source-type: tar
-    organize:
-        noip-duc-linux.tar.gz: src/noip-duc-linux.tar.gz
+
